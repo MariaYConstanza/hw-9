@@ -1,3 +1,8 @@
+#Mac
+.DS_Store/
+
+#Package
+node_modules/
 # Logs
 logs
 *.log
