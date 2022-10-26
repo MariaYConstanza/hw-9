@@ -31,4 +31,4 @@ function genMarkdown(data) {
     `;
 }
 
-module.exports = generateMarkdown;
+module.exports = genMarkdown;
