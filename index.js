@@ -1,8 +1,8 @@
 // packages needed for this application
-const fs=require("fs");
-const inquirer=require("inquirer");
-const utils=require("utils");
-const ReadmeGen=require("ReadmeGen");
+const fs = require("fs");
+const inquirer = require("inquirer");
+const utils = require("utils");
+const ReadmeGen = require("ReadmeGen");
 
 //Create an array of questions for user input
 const questions = [
@@ -67,8 +67,10 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    fs.writeFile()
-}
+    inquirer.createPromptModule(questions).then(function(data){
+        fs.writeFile("README.md", genMarkdown(data));
+    })
+};
 
 // Function call to initialize app
 init();

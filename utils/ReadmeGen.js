@@ -3,7 +3,8 @@ function genMarkdown(data) {
     return`
     # ${data.title}
     [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT${data.github}/${data.repo})
-    
+    [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC${data.github}/${data.repo})
+    [![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0${data.github}/${data.repo})
     ## Description${data.description}
     
     ## Table of Contents
